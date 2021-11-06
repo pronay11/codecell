@@ -1,38 +1,270 @@
-.App {
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.swiper-slide {
+  background: #fff;
   text-align: center;
+  font-size: 18px;
+  line-height: 200px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header-part-one{
+  
+
+}
+.header-part-one.swiper-slide{
+  
+  display: grid;
+} */
+html {
+  font-size: 72%;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+  background-color:#fff;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns:100%;
+  grid-template-rows:100%;
+  
+}
+.header-area{
+  /* background-color: blue; */
+  height: 20vh;
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-part-one{
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  /* display: flex; */
+}
+.header-area.header-part-one.logo-pic.img{
+ /* height: 100%;
+ width: 100%; */
+ /* display: inline-block; */
+ 
+}
+.header-area.header-part-one.swiper-slide{
+  /* /* background: #c24747;
+  /* text-align: center; */
+  /* font-size: 1.8rem;
+  line-height: 20rem;
+  box-sizing: border-box;
+  border: 0.1rem solid #ccc;  */
+} 
+.navbar-area{
+ height: 15vh;
+ background-color:#3181dd;
+ text-align: left;
+}
+.navbar ul li{
+ display: inline;
+ margin: 0 2.5rem;
+ 
+}
+.navbar li a{
+  color:#c6bcf5;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+************************************************************************ 
+*************************APPOINTMENT-AREA*******************************
+************************************************************************
+.appointment-area{
+  background-color: #fff;
+}
+.apppointmentimage {
+  /* width: 100%; */
+  background: url("./images/hero/home-appointment-hero-bg-image.jpg");
+  height: 400px;
+  text-align:center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:relative;
+
+}
+
+.appointmenttext{
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  bottom: 0;
+  top:0;
+  left:0;
+  
+}
+.appointmenttext h1{
+  color:#fff;
+  margin-top: 7.2rem;
+  font-size: 3.5rem;
+}
+.appointmentform {
+  border-radius: 0.5rem;
+  background: #fff;
+  width: 20rem;
+  height: 30rem;
+  position: absolute;
+  bottom: 0;
+  top:0;
+  left: 0;
+  right:0;
+  margin: auto;
+}
+.appointmentform.grid-container{
+  width: 2rem;
+  background:#fff;
+}
+.contact-title h2{
+  margin-top: 1.5rem;
+  color:#444444;
+
+}
+button{
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #3181dd;
+}
+************************************************************************
+*************************SERVICE-AREA***********************************
+************************************************************************
+.service-area{
+ background-color:#fff;
+ height: 15vh;
+}
+.servicetext{
+  color:rgb(17, 16, 16);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+span{
+  color: blue;
+}
+.iconwrap{
+  height: 20rem;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.itemone{
+  width: 25%;
+  margin-right: 1rem;
+background-color:#fff;
+}
+.itemone a {
+  text-decoration: none;
+  color: blue;
+}
+.itemtwo{
+  width: 25%;
+  margin-right: 1rem;
+  background-color:#fff;
+}
+.itemtwo{
+  color: #444444;
+}
+.itemtwo a{
+  text-decoration: none;
+  color: blue;
+}
+.itemthree{
+  width: 25%;
+  border: 1rem ;
+  background-color:#fff;
+}
+.itemthree a {
+  text-decoration: none;
+  color: blue;
+}
+************************************************************************ 
+*************************OUR COMPANY SERVICE****************************
+************************************************************************
+.tabs-wrapper-area {
+  /* background-color: rgb(57, 236, 212); */
+  height:20vh;
+} 
+.company-info h4{
+  margin-top: 2.5rem;
+   text-align: center;
+}
+.company-info-delails{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.our-services button {
+  font-size: 3rem;
+  margin-right: 1.5rem;
+ 
+}
+.partners button {
+  font-size: 3rem;
+  margin-right: 1rem;
+
+}
+.it-soluation button {
+  font-size: 3rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+.our-services a{
+  font-size: 3rem;
+  text-decoration: none;
+
+}
+.partners a{
+  font-size: 3rem;
+  text-decoration: none;
+
+}
+.it-soluation a{
+  font-size: 3rem;
+  text-decoration: none;
+
+}
+************************************************************************
+    *************************Action Area****************************
+************************************************************************
+.action-area{
+  height: 20rem;
+ background-color: darkslategrey;
+  height: 20rem;
+
+}
+ul li{
+   list-style-type: none;
+   display: inline;
+   justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fact-wrapper-area{
+ background-color: fuchsia;
+  height: 20rem;
+}
+.contact-us-area{
+ background-color: gold;
+  height: 20rem;
+}
+.footer-area{
+ background-color: lightcoral;
+  height: 20rem;
 }
